@@ -13,6 +13,20 @@
 		AD31004422533C8A0011E553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD31004322533C8A0011E553 /* Assets.xcassets */; };
 		AD31004722533C8A0011E553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD31004522533C8A0011E553 /* LaunchScreen.storyboard */; };
 		AD31004A22533C8A0011E553 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31004922533C8A0011E553 /* main.m */; };
+		AD31005422533CD10011E553 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005122533CD10011E553 /* KVOViewController.m */; };
+		AD31005522533CD10011E553 /* NSNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005322533CD10011E553 /* NSNotificationViewController.m */; };
+		AD31007122533CDD0011E553 /* NSMutableDictionary+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005722533CDD0011E553 /* NSMutableDictionary+GJCrash.m */; };
+		AD31007222533CDD0011E553 /* NSString+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005822533CDD0011E553 /* NSString+GJCrash.m */; };
+		AD31007322533CDD0011E553 /* NSObject+KVOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005C22533CDD0011E553 /* NSObject+KVOCrash.m */; };
+		AD31007422533CDD0011E553 /* NSArray+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005D22533CDD0011E553 /* NSArray+GJCrash.m */; };
+		AD31007522533CDD0011E553 /* NSAttributedString+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31005E22533CDD0011E553 /* NSAttributedString+GJCrash.m */; };
+		AD31007722533CDD0011E553 /* NSObject+GJSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31006122533CDD0011E553 /* NSObject+GJSwizzle.m */; };
+		AD31007822533CDD0011E553 /* NSMutableAttributedString+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31006422533CDD0011E553 /* NSMutableAttributedString+GJCrash.m */; };
+		AD31007922533CDD0011E553 /* GJCrashLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31006822533CDD0011E553 /* GJCrashLog.m */; };
+		AD31007A22533CDD0011E553 /* NSObject+NSNotificationCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31006922533CDD0011E553 /* NSObject+NSNotificationCrash.m */; };
+		AD31007B22533CDD0011E553 /* NSMutableString+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31006B22533CDD0011E553 /* NSMutableString+GJCrash.m */; };
+		AD31007C22533CDD0011E553 /* NSDictionary+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31006F22533CDD0011E553 /* NSDictionary+GJCrash.m */; };
+		AD31007D22533CDD0011E553 /* NSMutableArray+GJCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = AD31007022533CDD0011E553 /* NSMutableArray+GJCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +40,34 @@
 		AD31004622533C8A0011E553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD31004822533C8A0011E553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD31004922533C8A0011E553 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD31005022533CD10011E553 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		AD31005122533CD10011E553 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		AD31005222533CD10011E553 /* NSNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNotificationViewController.h; sourceTree = "<group>"; };
+		AD31005322533CD10011E553 /* NSNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationViewController.m; sourceTree = "<group>"; };
+		AD31005722533CDD0011E553 /* NSMutableDictionary+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+GJCrash.m"; sourceTree = "<group>"; };
+		AD31005822533CDD0011E553 /* NSString+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GJCrash.m"; sourceTree = "<group>"; };
+		AD31005922533CDD0011E553 /* NSMutableAttributedString+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+GJCrash.h"; sourceTree = "<group>"; };
+		AD31005A22533CDD0011E553 /* NSObject+NSNotificationCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSNotificationCrash.h"; sourceTree = "<group>"; };
+		AD31005B22533CDD0011E553 /* GJCrashLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCrashLog.h; sourceTree = "<group>"; };
+		AD31005C22533CDD0011E553 /* NSObject+KVOCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOCrash.m"; sourceTree = "<group>"; };
+		AD31005D22533CDD0011E553 /* NSArray+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GJCrash.m"; sourceTree = "<group>"; };
+		AD31005E22533CDD0011E553 /* NSAttributedString+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+GJCrash.m"; sourceTree = "<group>"; };
+		AD31005F22533CDD0011E553 /* NSMutableString+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006122533CDD0011E553 /* NSObject+GJSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GJSwizzle.m"; sourceTree = "<group>"; };
+		AD31006222533CDD0011E553 /* NSMutableArray+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006322533CDD0011E553 /* NSDictionary+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006422533CDD0011E553 /* NSMutableAttributedString+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+GJCrash.m"; sourceTree = "<group>"; };
+		AD31006522533CDD0011E553 /* NSString+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006622533CDD0011E553 /* NSMutableDictionary+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006722533CDD0011E553 /* NSObject+KVOCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOCrash.h"; sourceTree = "<group>"; };
+		AD31006822533CDD0011E553 /* GJCrashLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCrashLog.m; sourceTree = "<group>"; };
+		AD31006922533CDD0011E553 /* NSObject+NSNotificationCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSNotificationCrash.m"; sourceTree = "<group>"; };
+		AD31006A22533CDD0011E553 /* NSObject+GJSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GJSwizzle.h"; sourceTree = "<group>"; };
+		AD31006B22533CDD0011E553 /* NSMutableString+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+GJCrash.m"; sourceTree = "<group>"; };
+		AD31006D22533CDD0011E553 /* NSArray+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006E22533CDD0011E553 /* NSAttributedString+GJCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+GJCrash.h"; sourceTree = "<group>"; };
+		AD31006F22533CDD0011E553 /* NSDictionary+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GJCrash.m"; sourceTree = "<group>"; };
+		AD31007022533CDD0011E553 /* NSMutableArray+GJCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+GJCrash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +100,51 @@
 		AD31003922533C880011E553 /* GJNoCrash */ = {
 			isa = PBXGroup;
 			children = (
+				AD31005622533CDD0011E553 /* GJNoCrash */,
 				AD31003A22533C880011E553 /* AppDelegate.h */,
 				AD31003B22533C880011E553 /* AppDelegate.m */,
 				AD31003D22533C880011E553 /* ViewController.h */,
 				AD31003E22533C880011E553 /* ViewController.m */,
+				AD31005022533CD10011E553 /* KVOViewController.h */,
+				AD31005122533CD10011E553 /* KVOViewController.m */,
+				AD31005222533CD10011E553 /* NSNotificationViewController.h */,
+				AD31005322533CD10011E553 /* NSNotificationViewController.m */,
 				AD31004022533C880011E553 /* Main.storyboard */,
 				AD31004322533C8A0011E553 /* Assets.xcassets */,
 				AD31004522533C8A0011E553 /* LaunchScreen.storyboard */,
 				AD31004822533C8A0011E553 /* Info.plist */,
 				AD31004922533C8A0011E553 /* main.m */,
+			);
+			path = GJNoCrash;
+			sourceTree = "<group>";
+		};
+		AD31005622533CDD0011E553 /* GJNoCrash */ = {
+			isa = PBXGroup;
+			children = (
+				AD31005B22533CDD0011E553 /* GJCrashLog.h */,
+				AD31006822533CDD0011E553 /* GJCrashLog.m */,
+				AD31006522533CDD0011E553 /* NSString+GJCrash.h */,
+				AD31005822533CDD0011E553 /* NSString+GJCrash.m */,
+				AD31006D22533CDD0011E553 /* NSArray+GJCrash.h */,
+				AD31005D22533CDD0011E553 /* NSArray+GJCrash.m */,
+				AD31006722533CDD0011E553 /* NSObject+KVOCrash.h */,
+				AD31005C22533CDD0011E553 /* NSObject+KVOCrash.m */,
+				AD31006A22533CDD0011E553 /* NSObject+GJSwizzle.h */,
+				AD31006122533CDD0011E553 /* NSObject+GJSwizzle.m */,
+				AD31006322533CDD0011E553 /* NSDictionary+GJCrash.h */,
+				AD31006F22533CDD0011E553 /* NSDictionary+GJCrash.m */,
+				AD31006222533CDD0011E553 /* NSMutableArray+GJCrash.h */,
+				AD31007022533CDD0011E553 /* NSMutableArray+GJCrash.m */,
+				AD31005F22533CDD0011E553 /* NSMutableString+GJCrash.h */,
+				AD31006B22533CDD0011E553 /* NSMutableString+GJCrash.m */,
+				AD31006E22533CDD0011E553 /* NSAttributedString+GJCrash.h */,
+				AD31005E22533CDD0011E553 /* NSAttributedString+GJCrash.m */,
+				AD31006622533CDD0011E553 /* NSMutableDictionary+GJCrash.h */,
+				AD31005722533CDD0011E553 /* NSMutableDictionary+GJCrash.m */,
+				AD31005A22533CDD0011E553 /* NSObject+NSNotificationCrash.h */,
+				AD31006922533CDD0011E553 /* NSObject+NSNotificationCrash.m */,
+				AD31005922533CDD0011E553 /* NSMutableAttributedString+GJCrash.h */,
+				AD31006422533CDD0011E553 /* NSMutableAttributedString+GJCrash.m */,
 			);
 			path = GJNoCrash;
 			sourceTree = "<group>";
@@ -141,9 +219,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD31005522533CD10011E553 /* NSNotificationViewController.m in Sources */,
 				AD31003F22533C880011E553 /* ViewController.m in Sources */,
+				AD31007C22533CDD0011E553 /* NSDictionary+GJCrash.m in Sources */,
+				AD31007322533CDD0011E553 /* NSObject+KVOCrash.m in Sources */,
+				AD31007B22533CDD0011E553 /* NSMutableString+GJCrash.m in Sources */,
+				AD31007722533CDD0011E553 /* NSObject+GJSwizzle.m in Sources */,
+				AD31007122533CDD0011E553 /* NSMutableDictionary+GJCrash.m in Sources */,
+				AD31007522533CDD0011E553 /* NSAttributedString+GJCrash.m in Sources */,
+				AD31007D22533CDD0011E553 /* NSMutableArray+GJCrash.m in Sources */,
+				AD31007A22533CDD0011E553 /* NSObject+NSNotificationCrash.m in Sources */,
+				AD31007422533CDD0011E553 /* NSArray+GJCrash.m in Sources */,
+				AD31007922533CDD0011E553 /* GJCrashLog.m in Sources */,
+				AD31007222533CDD0011E553 /* NSString+GJCrash.m in Sources */,
+				AD31005422533CD10011E553 /* KVOViewController.m in Sources */,
 				AD31004A22533C8A0011E553 /* main.m in Sources */,
 				AD31003C22533C880011E553 /* AppDelegate.m in Sources */,
+				AD31007822533CDD0011E553 /* NSMutableAttributedString+GJCrash.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,13 +380,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZP9CL2A5P;
 				INFOPLIST_FILE = GJNoCrash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gejiangs.GJNoCrash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,13 +398,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZP9CL2A5P;
 				INFOPLIST_FILE = GJNoCrash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gejiangs.GJNoCrash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

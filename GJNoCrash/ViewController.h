@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  GJNoCrash
+//  NoCrash
 //
-//  Created by gejiangs on 2019/4/2.
+//  Created by gejiangs on 2019/3/28.
 //  Copyright © 2019 gejiangs. All rights reserved.
 //
 
