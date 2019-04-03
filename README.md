@@ -30,7 +30,7 @@ NSLog(@"NSMutableDictionary:%@", dict);
 ##Crash log 处理有两种方式
 ```objc
 
-#import "DCManager.h"
+#import "GJCrashLog.h"
 //方法1 block方法
 [[GJCrashLog manager] callbackCrashLog:^(NSString *crashLog) {
           //处理crashlog
