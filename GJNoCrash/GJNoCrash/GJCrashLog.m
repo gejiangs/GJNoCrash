@@ -90,9 +90,7 @@
         [self.delegate callbackGJCrashLog:msg];
     }
     
-    if (DEBUG) {
-        NSLog(@"%@", msg);
-    }
+    NSLog(@"%@", msg);
 }
 
 /**
