@@ -27,6 +27,24 @@ NSMutableDictionary *dict = [NSMutableDictionary dictionary];
 NSLog(@"NSMutableDictionary:%@", dict);
 ```
 
+##Crash log 处理有两种方式
+```objc
+
+#import "DCManager.h"
+//方法1 block方法
+[[GJCrashLog manager] callbackCrashLog:^(NSString *crashLog) {
+          //处理crashlog
+}];
+
+//方法2 delegate方式
+[GJCrashLog manager].delegate = self;
+//GJCrashLog Delegate
+-(void)callbackGJCrashLog:(NSString *)crashLog
+{
+    //处理crashlog
+}
+```
+
 # 使用方法很简单，打开Podfile文件，添加如下代码
 ```
 pod 'GJNoCrash'
