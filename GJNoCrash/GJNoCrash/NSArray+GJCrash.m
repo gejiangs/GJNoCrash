@@ -29,7 +29,6 @@
 
 + (void)load
 {
-    NSLog(@"array load");
     Class __NSArray = objc_getClass("NSArray");
     Class __NSArrayI = objc_getClass("__NSArrayI");
     Class __NSSingleObjectArrayI = objc_getClass("__NSSingleObjectArrayI");
@@ -69,8 +68,7 @@
     }
     @catch (NSException *exception) {
         
-        NSString *defaultToDo = @"This framework default is to remove nil object and instance a array.";
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:defaultToDo];
+        [[GJCrashLog manager] printObject:self exception:exception];
 
         //以下是对错误数据的处理，把为nil的数据去掉,然后初始化数组
         NSInteger newObjsIndex = 0;
@@ -102,7 +100,7 @@
         object = [self gj_objectAtIndex:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -115,7 +113,7 @@
         object = [self gj_objectAtIndexedSubscript:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -128,7 +126,7 @@
         object = [self gj_objectAtIndexedNullarray:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -141,7 +139,7 @@
         object = [self gj_objectAtIndexedArrayCountOnlyOne:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -153,7 +151,7 @@
     @try {
         returnArray = [self gj_objectsAtIndexes:indexes];
     } @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         
     } @finally {
         return returnArray;
@@ -165,7 +163,7 @@
     @try {
         [self gj_getObjectsNSArray:objects range:range];
     } @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnIgnore];
+        [[GJCrashLog manager] printObject:self exception:exception];
     } @finally {
     }
 }
@@ -174,7 +172,7 @@
     @try {
         [self gj_getObjectsNSSingleObjectArrayI:objects range:range];
     } @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnIgnore];
+        [[GJCrashLog manager] printObject:self exception:exception];
     } @finally {
     }
 }
@@ -183,7 +181,7 @@
     @try {
         [self gj_getObjectsNSArrayI:objects range:range];
     } @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnIgnore];
+        [[GJCrashLog manager] printObject:self exception:exception];
     } @finally {
     }
 }

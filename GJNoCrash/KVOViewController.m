@@ -22,6 +22,7 @@
     self.title = @"KVO";
     self.view.backgroundColor = [UIColor whiteColor];
     [self addObserver:self forKeyPath:self.key options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:self forKeyPath:@"aaa" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 -(void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context
@@ -41,7 +42,8 @@
 
 -(void)dealloc
 {
-    NSLog(@"不手动removeObserver,不crash");
+    [self removeObserver:self forKeyPath:@"bb"];
+    NSLog(@"移除未添加的观察，不会crash");
 }
 
 @end

@@ -23,10 +23,7 @@
         instance = [self gj_dictionaryWithObjects:objects forKeys:keys count:cnt];
     }
     @catch (NSException *exception) {
-        
-        NSString *defaultToDo = @"This framework default is to remove nil key-values and instance a dictionary.";
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:defaultToDo];
-        
+        [[GJCrashLog manager] printObject:self exception:exception];
         //处理错误的数据，然后重新初始化一个字典
         NSUInteger index = 0;
         id  _Nonnull __unsafe_unretained newObjects[cnt];

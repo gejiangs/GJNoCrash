@@ -47,9 +47,7 @@
         characteristic = [self gj_characterAtIndex:index];
     }
     @catch (NSException *exception) {
-        
-        NSString *defaultToDo = @"This framework default is to return a without assign unichar.";
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:defaultToDo];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return characteristic;
@@ -66,7 +64,7 @@
         subString = [self gj_substringFromIndex:from];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         subString = nil;
     }
     @finally {
@@ -83,7 +81,7 @@
         subString = [self gj_substringToIndex:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         subString = nil;
     }
     @finally {
@@ -101,7 +99,7 @@
         newStr = [self gj_stringByReplacingCharactersInRange:range withString:replacement];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         newStr = nil;
     }
     @finally {
@@ -117,7 +115,7 @@
         newStr = [self gj_stringByReplacingOccurrencesOfString:range withString:replacement];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         newStr = nil;
     }
     @finally {
@@ -135,7 +133,7 @@
         newStr = [self gj_stringByReplacingOccurrencesOfString:target withString:replacement options:options range:searchRange];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         newStr = nil;
     }
     @finally {
@@ -152,7 +150,7 @@
         subString = [self gj_substringWithRange:range];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
         subString = nil;
     }
     @finally {

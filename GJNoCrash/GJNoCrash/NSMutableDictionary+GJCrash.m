@@ -32,7 +32,7 @@
         [self gj_setObject:anObject forKey:aKey];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -44,7 +44,7 @@
         [self gj_setObject:anObject forKeyedSubscript:aKey];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -56,7 +56,7 @@
         [self gj_removeObjectForKey:aKey];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }

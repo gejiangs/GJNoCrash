@@ -31,7 +31,7 @@
         object = [self gj_initWithString:str];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -46,7 +46,7 @@
         object = [self gj_initWithAttributedString:attrStr];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -62,7 +62,7 @@
         object = [self gj_initWithString:str attributes:attrs];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnNil];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;

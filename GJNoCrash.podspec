@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GJNoCrash"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "防止程序Crash的代码，对NSArray,NSDictionary,NSString,KVO做异常处理"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/gejiangs/GJNoCrash.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/gejiangs/GJNoCrash.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

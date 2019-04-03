@@ -97,7 +97,7 @@
             [_objectInfosMap removeObjectForKey:object];
         }
     }else {
-        [GJCrashLog printCrashMsg:[NSString stringWithFormat:@"Cannot remove an observer %@ for the key path '%@' from %@ because it is not registered as an observer.",object,keyPath,self]];
+//        [GJCrashLog printCrashMsg:[NSString stringWithFormat:@"Cannot remove an observer %@ for the key path '%@' from %@ because it is not registered as an observer.",object,keyPath,self]];
     }
     [self unlock];
 }
@@ -237,7 +237,7 @@ static int const WONSObjectKVOCrashKey;
         [self gj_addObserver:observer forKeyPath:keyPath options:options context:context];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         
@@ -246,7 +246,6 @@ static int const WONSObjectKVOCrashKey;
         }
         NSHashTable *observers = self.keyPathInfos[keyPath];
         if (observers && [observers containsObject:observer]) {
-            //        [GJCrashLog printCrashMsg:[NSString stringWithFormat:@"CrashProtector: Repeat adding the same keyPath observer: %@, keyPath: %@", observer, keyPath]];
             return;
         }
         if (!observers) {
@@ -267,8 +266,7 @@ static int const WONSObjectKVOCrashKey;
         [self gj_removeObserver:observer forKeyPath:keyPath];
     }
     @catch (NSException *exception) {
-        // 打印crash信息
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         
@@ -278,12 +276,10 @@ static int const WONSObjectKVOCrashKey;
         NSHashTable *observers = self.keyPathInfos[keyPath];
         // keyPath集合中未包含这个观察者，即移除未被以KVO注册的观察者
         if (!observers) {
-//            [GJCrashLog printCrashMsg:[NSString stringWithFormat:@"Cannot remove an observer %@ for the key path '%@' from %@ because it is not registered as an observer.",observer,keyPath,self]];
             return;
         }
         // 重复删除观察者
         if (![observers containsObject:observer]) {
-//            [GJCrashLog printCrashMsg:[NSString stringWithFormat:@"Cannot remove an observer %@ for the key path '%@' from %@ because it is not registered as an observer.",observer,keyPath,self]];
             return;
         }
         [observers removeObject:observer];

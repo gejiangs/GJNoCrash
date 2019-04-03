@@ -38,7 +38,7 @@
         object = [self gj_objectAtIndex:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -51,7 +51,7 @@
         object = [self gj_objectAtIndex:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
         return object;
@@ -63,7 +63,7 @@
         [self gj_insertObject:anObject atIndex:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -74,7 +74,7 @@
         [self gj_removeObjectAtIndex:index];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -85,7 +85,7 @@
         [self gj_setObject:obj atIndexedSubscript:idx];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -95,7 +95,7 @@
     @try {
         [self gj_getObjects:objects range:range];
     } @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:@""];
+        [[GJCrashLog manager] printObject:self exception:exception];
     } @finally {
     }
 }

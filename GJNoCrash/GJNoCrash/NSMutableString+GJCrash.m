@@ -31,7 +31,7 @@
         [self gj_replaceCharactersInRange:range withString:aString];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnIgnore];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -44,7 +44,7 @@
         [self gj_insertString:aString atIndex:loc];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnIgnore];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
@@ -58,7 +58,7 @@
         [self gj_deleteCharactersInRange:range];
     }
     @catch (NSException *exception) {
-        [GJCrashLog gj_noteErrorWithException:exception attachedTODO:GJCrashDefaultReturnIgnore];
+        [[GJCrashLog manager] printObject:self exception:exception];
     }
     @finally {
     }
